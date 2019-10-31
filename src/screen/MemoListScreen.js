@@ -7,7 +7,7 @@ import CircleButton from '../component/CirCleButton';
 class MemoListScreen extends React.Component{
   render(){
     return(
-      <View>
+      <View style={styles.container}>
         <UpBar/>
         <MemoList/>
         <CircleButton/>
