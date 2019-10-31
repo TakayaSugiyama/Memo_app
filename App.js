@@ -14,27 +14,27 @@ export default function App() {
 
       <View style = {styles.memoLists}>
         <View style = {styles.memoListItem}>
-            <Text style = {styles.memoTiele}>講座のアイデア</Text>
+            <Text style = {styles.memoTitle}>講座のアイデア</Text>
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View>
         
         <View style = {styles.memoListItem}>
-            <Text style = {styles.memoTiele}>講座のアイデア</Text>
+            <Text style = {styles.memoTitle}>講座のアイデア</Text>
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View>
 
         <View style = {styles.memoListItem}>
-            <Text style = {styles.memoTiele}>講座のアイデア</Text>
+            <Text style = {styles.memoTitle}>講座のアイデア</Text>
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View> 
 
         <View style = {styles.memoListItem}>
-            <Text style = {styles.memoTiele}>講座のアイデア</Text>
+            <Text style = {styles.memoTitle}>講座のアイデア</Text>
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View> 
 
         <View style = {styles.memoListItem}>
-            <Text style = {styles.memoTiele}>講座のアイデア</Text>
+            <Text style = {styles.memoTitle}>講座のアイデア</Text>
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View> 
 
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor:"#eee",
   },
   upbar:{
     position:"absolute",
@@ -60,9 +61,32 @@ const styles = StyleSheet.create({
     backgroundColor: "#265366",
     paddingTop:40,
     alignItems:"center",
+    shadowColor:"#000",
+    shadowOffset: {width: 1,height: 0},
+    shadowOpacity:0.8,
+    shadowRadius:0,
   },
   upbarTitle:{
     color:"#fff",
     fontSize: 20,
+  },
+  memoLists:{
+    width:"100%",
+    flex:1,
+    paddingTop:70,
+  },
+  memoListItem:{
+    padding:16,
+    borderBottomColor:"#ddd",
+    borderBottomWidth:1,
+    backgroundColor:"#fff",
+  },
+  memoTitle:{
+    fontSize:18,
+    marginBottom:4,
+  }, 
+  memoDate:{
+    color:"#887676",
+    fontSize:12
   }
 });
