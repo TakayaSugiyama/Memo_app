@@ -38,6 +38,9 @@ export default function App() {
             <Text style = {styles.memoDate}>2017 10 27 </Text>
         </View> 
 
+        <View style = {styles.memoAddButton}>
+          <Text style = {styles.memoAddButtonTitle}>+</Text>
+        </View>
       </View>
       
     </View>
@@ -51,6 +54,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor:"#eee",
+    position:"relative",
   },
   upbar:{
     position:"absolute",
@@ -88,5 +92,19 @@ const styles = StyleSheet.create({
   memoDate:{
     color:"#887676",
     fontSize:12
+  }, 
+  memoAddButton:{
+   backgroundColor:"rgba(39, 119, 168, 0.3)",
+   width:50,
+   height:50, 
+   borderRadius:50,
+   position:"absolute", 
+   bottom: 20,
+   right:30,
+  }, 
+  memoAddButtonTitle:{
+    fontSize:48,
+    lineHeight:50,
+    textAlign:"center",
   }
 });
