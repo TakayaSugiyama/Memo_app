@@ -10,7 +10,7 @@ class MemoDetailScreen extends  React.Component{
          <UpBar/>
          <View style = {styles.memoHeader}>
            <View>
-             <Text style = {styles.memoHeaderTitle}>講座のアイデア</Text>
+             <Text style = {styles.memoHeaderTitle}>Hello World</Text>
              <Text style = {styles.memoHeaderDate}>2017/10/27</Text>
            </View>
          </View>
