@@ -15,7 +15,7 @@ class MemoDetailScreen extends  React.Component{
            </View>
          </View>
          <View style = {styles.memoContent}>
-            <Text>講座のアイデアです。</Text>
+            <Text sytle = {styles.memoContentText} >講座のアイデアです。</Text>
          </View>
          <CircleButton style = {styles.editButton}>+</CircleButton>
       </View>
@@ -51,8 +51,12 @@ const styles = StyleSheet.create({
     padding: 30,
     backgroundColor:"#fff",
     flex:1,
-  }, 
+  },
+  memoContentText:{
+    fontSize:30,
+  },
   editButton:{
+    top: 245,
   }
 })
 

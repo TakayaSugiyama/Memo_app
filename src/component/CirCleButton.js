@@ -3,8 +3,9 @@ import {StyleSheet, Text,View} from "react-native";
 
 class CircleButton extends React.Component{
   render(){
+    const style = this.props.style;
     return(
-      <View style = {styles.memoAddButton}>
+      <View style = {[styles.circleButton, style]}>
           <Text style = {styles.memoAddButtonTitle}>+</Text>
       </View>
     )
@@ -12,8 +13,8 @@ class CircleButton extends React.Component{
 }
 
 const styles = StyleSheet.create({
-  memoAddButton:{
-    backgroundColor:"rgba(39, 119, 168, 0.3)",
+  circleButton:{
+    backgroundColor:"#ff69b4",
     width:50,
     height:50, 
     borderRadius:50,
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
    memoAddButtonTitle:{
      fontSize:48,
      lineHeight:50,
+     color: "#fff",
      textAlign:"center",
    }
 })
