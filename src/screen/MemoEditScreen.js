@@ -1,5 +1,5 @@
 import React from "react"
-import  {StyleSheet,Text, View} from "react-native";
+import  {StyleSheet,TextInput, View} from "react-native";
 import UpBar from '../component/UpBar';
 import CircleButton from '../element/CirCleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -10,9 +10,7 @@ class MemoEditScreen extends React.Component{
     return(
       <View style = {styles.container}>
          <UpBar/>
-         <View style = {styles.editInputArea}> 
-           <Text style = {styles.editInput}>aaaaaaaaaaaaaaaa</Text>
-         </View>
+         <TextInput style = {styles.editInputArea} value = "Hi"  multiline /> 
          <CircleButton>
            <FontAwesomeIcon icon = {faCheck} style = {styles.checkButton}/>
          </CircleButton>
@@ -33,11 +31,12 @@ const styles = StyleSheet.create({
    },
    editInputArea:{
      marginTop:70,
-     padding:30,
-   },
-   editInput:{
+     paddingLeft:30,
+     paddingTop:30,
+     backgroundColor:"#fff",
+     paddingBottom:780,
      color:"#333",
-     fontSize:23,
+     fontSize:24,
    }
 })
 
