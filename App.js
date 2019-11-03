@@ -1,10 +1,10 @@
 import React from 'react';
-import MemoEditScreen from "./src/screen/MemoEditScreen"
+import LoginScreen from "./src/screen/LoginScreen"
 
 
 export default function App() {
   return (
-      <MemoEditScreen/>
+      <LoginScreen/>
   );
 }
 
