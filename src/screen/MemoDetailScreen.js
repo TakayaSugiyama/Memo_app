@@ -2,6 +2,8 @@ import React from "react";
 import {StyleSheet, Text,View} from 'react-native';
 import CircleButton from "../component/CirCleButton";
 import UpBar from "../component/UpBar";
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 class MemoDetailScreen extends  React.Component{
   render(){
@@ -17,7 +19,9 @@ class MemoDetailScreen extends  React.Component{
          <View style = {styles.memoContent}>
             <Text sytle = {styles.memoContentText} >講座のアイデアです。</Text>
          </View>
-         <CircleButton style = {styles.editButton}>+</CircleButton>
+         <CircleButton style = {styles.editButton}>
+              <FontAwesomeIcon icon = {faEdit } style = {styles.editButtonTitle} />
+         </CircleButton>
       </View>
     )
   }
@@ -57,6 +61,11 @@ const styles = StyleSheet.create({
   },
   editButton:{
     top: 245,
+  },
+  editButtonTitle:{
+    top: 15,
+    left:17,
+    color:"#fff",
   }
 })
 

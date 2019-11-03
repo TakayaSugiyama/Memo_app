@@ -1,7 +1,9 @@
 import React from "react";
 import * as Font from 'expo-font';
 import fontAwsome from "../../assets/fonts/fa-solid-900.ttf";
-import {StyleSheet, Text,View} from "react-native";
+import {StyleSheet,View} from "react-native";
+
+
 
 
 
@@ -19,7 +21,7 @@ class CircleButton extends React.Component{
     const style = this.props.style;
     return(
       <View style = {[styles.circleButton, style]}>
-          <Text style = {styles.memoAddButtonTitle}>+</Text>
+         {this.props.children}
       </View>
     )
   }
