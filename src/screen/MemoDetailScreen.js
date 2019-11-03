@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet, Text,View} from 'react-native';
-import CircleButton from "../component/CirCleButton";
+import CircleButton from "../element/CirCleButton";
 import UpBar from "../component/UpBar";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';

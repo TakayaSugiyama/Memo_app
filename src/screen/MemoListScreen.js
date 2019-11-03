@@ -2,7 +2,7 @@ import React from "react"
 import  {StyleSheet, View} from "react-native";
 import MemoList from '../component/MemoList';
 import UpBar from '../component/UpBar';
-import CircleButton from '../component/CirCleButton';
+import CircleButton from '../element/CirCleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
