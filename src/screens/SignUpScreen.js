@@ -1,19 +1,17 @@
 import React from "react";
-import {StyleSheet, TextInput,View, Button, Text} from "react-native";
-import UpBar from "../component/UpBar";
+import {StyleSheet, TextInput,View, Text} from "react-native";
 import { TouchableHighlight } from "react-native-gesture-handler";
 
-class LoginScreen extends React.Component{
+class SignUpScreen extends React.Component{
   render(){
     return(
       <View style = {styles.container}>
-         <UpBar/>
          <View style = {styles.form} >
-            <Text style = {styles.title}>ログイン</Text>
+            <Text style = {styles.title}>メンバー登録</Text>
             <TextInput value = "Your Eamil" style = {styles.formField } />
             <TextInput value = "Your Password" style = {styles.formField} />
             <TouchableHighlight   onPress = {() => {}} style = {styles.submitButton}>
-              <Text style = {styles.submitText}>ログインする</Text>
+              <Text style = {styles.submitText}>登録する</Text>
             </TouchableHighlight>
          </View>
       </View>
@@ -62,4 +60,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default  LoginScreen;
+export default  SignUpScreen;

@@ -1,7 +1,6 @@
 import React from "react";
 import {StyleSheet, Text,View} from 'react-native';
 import CircleButton from "../element/CirCleButton";
-import UpBar from "../component/UpBar";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +8,6 @@ class MemoDetailScreen extends  React.Component{
   render(){
     return(
       <View style = {styles.container}>
-         <UpBar/>
          <View style = {styles.memoHeader}>
            <View>
              <Text style = {styles.memoHeaderTitle}>Hello World</Text>
@@ -29,7 +27,6 @@ class MemoDetailScreen extends  React.Component{
 
 const styles = StyleSheet.create({
   memoHeader:{
-     marginTop:70,
      height: 200,
      backgroundColor:"#033440",
      justifyContent:"center",

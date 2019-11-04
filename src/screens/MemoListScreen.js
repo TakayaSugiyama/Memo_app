@@ -1,7 +1,6 @@
 import React from "react"
 import  {StyleSheet, View} from "react-native";
 import MemoList from '../component/MemoList';
-import UpBar from '../component/UpBar';
 import CircleButton from '../element/CirCleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +9,6 @@ class MemoListScreen extends React.Component{
   render(){
     return(
       <View style={styles.container}>
-        <UpBar/>
         <MemoList/>
         <CircleButton>
            <FontAwesomeIcon icon = {faPlus} style = {styles.listbutton} />
@@ -30,7 +28,7 @@ const styles = StyleSheet.create({
     position:"relative",
   },
   listbutton:{
-    top: 15,
+    top:15,
     left:17,
     color:"#fff",
   }
