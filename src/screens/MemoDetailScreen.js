@@ -4,6 +4,7 @@ import CircleButton from "../element/CirCleButton";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
+
 class MemoDetailScreen extends  React.Component{
   render(){
     return(
@@ -16,10 +17,10 @@ class MemoDetailScreen extends  React.Component{
          </View>
          <View style = {styles.memoContent}>
             <Text sytle = {styles.memoContentText} >講座のアイデアです。</Text>
-         </View>
-         <CircleButton style = {styles.editButton}>
+            <CircleButton style = {styles.editButton} onPress ={() => {}} >
               <FontAwesomeIcon icon = {faEdit } style = {styles.editButtonTitle} />
-         </CircleButton>
+            </CircleButton>
+         </View>
       </View>
     )
   }
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     fontSize:30,
   },
   editButton:{
-    top: 245,
+    top:9,
   },
   editButtonTitle:{
     top: 15,
