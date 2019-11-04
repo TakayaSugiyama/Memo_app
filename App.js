@@ -1,10 +1,10 @@
 import React from 'react';
-import LoginScreen from "./src/screen/LoginScreen"
+import SignUpScreen from "./src/screen/SignUpScreen"
 
 
 export default function App() {
   return (
-      <LoginScreen/>
+      <SignUpScreen/>
   );
 }
 
