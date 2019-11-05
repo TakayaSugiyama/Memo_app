@@ -17,9 +17,11 @@ class MemoDetailScreen extends  React.Component{
          </View>
          <View style = {styles.memoContent}>
             <Text sytle = {styles.memoContentText} >講座のアイデアです。</Text>
-            <CircleButton style = {styles.editButton} onPress ={() => {}} >
-              <FontAwesomeIcon icon = {faEdit } style = {styles.editButtonTitle} />
-            </CircleButton>
+            <View style = {styles.buttonField} >
+              <CircleButton style = {styles.editButton}  onPress = {() => {this.props.navigation.navigate("MemoEdit")} }>
+                  <FontAwesomeIcon icon = {faEdit } style = {styles.editButtonTitle} />
+              </CircleButton>
+            </View>
          </View>
       </View>
     )
@@ -51,8 +53,6 @@ const styles = StyleSheet.create({
   }, 
   memoContent:{
     padding: 30,
-    backgroundColor:"#fff",
-    flex:1,
   },
   memoContentText:{
     fontSize:30,
@@ -64,7 +64,13 @@ const styles = StyleSheet.create({
     top: 15,
     left:17,
     color:"#fff",
+  }, 
+  buttonField:{
+    width:"16%",
+    height:"10%",
+    top:30,
   }
+  
 })
 
 export default MemoDetailScreen;
