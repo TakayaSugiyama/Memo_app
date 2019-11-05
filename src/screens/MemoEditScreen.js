@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
      fontSize:24,
    },
    updateField:{
-      top: 740,
-      left: 340
+      top: 450,
+      left: 250
    }
 })
 

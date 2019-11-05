@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
   memoLists:{
     width:420,
     flex:1,
+    paddingLeft:20,
+    paddingRight:20,
   },
   memoListItem:{
     padding:16,

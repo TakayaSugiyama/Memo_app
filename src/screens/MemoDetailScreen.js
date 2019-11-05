@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     color:"#fff",
   }, 
   buttonField:{
-    width:"16%",
+    width:"20%",
     height:"10%",
     top:30,
   }
