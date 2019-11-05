@@ -3,13 +3,30 @@ import {StyleSheet, TextInput,View, Button, Text} from "react-native";
 import { TouchableHighlight } from "react-native-gesture-handler";
 
 class LoginScreen extends React.Component{
+  state = {
+    email: '',
+    password: '',
+  }
+
   render(){
     return(
       <View style = {styles.container}>
          <View style = {styles.form} >
             <Text style = {styles.title}>ログイン</Text>
-            <TextInput value = "Your Eamil" style = {styles.formField } />
-            <TextInput value = "Your Password" style = {styles.formField} />
+            <TextInput value = {this.state.email} style = {styles.formField } 
+                      onChangeText = {(text) => {this.setState({email: text})}} 
+                      autoCapitalize = "none" 
+                      autoCorrect = {false}
+                      autoCompleteType = "email"
+                      placeholder = "your email"
+             />
+            <TextInput value = {this.state.password} style = {styles.formField} 
+                       onChangeText = {(text) => {this.setState({password: text})}} 
+                       autoCapitalize = "none"
+                       autoCorrect = {false}
+                       placeholder = "your password"
+                       secureTextEntry
+            />
             <TouchableHighlight   onPress = {() => {this.props.navigation.navigate("Home")}} style = {styles.submitButton}>
               <Text style = {styles.submitText}>ログインする</Text>
             </TouchableHighlight>
