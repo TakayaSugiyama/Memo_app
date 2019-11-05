@@ -10,7 +10,7 @@ class SignUpScreen extends React.Component{
             <Text style = {styles.title}>メンバー登録</Text>
             <TextInput value = "Your Eamil" style = {styles.formField } />
             <TextInput value = "Your Password" style = {styles.formField} />
-            <TouchableHighlight   onPress = {() => {}} style = {styles.submitButton}>
+            <TouchableHighlight   onPress = {() => {this.props.navigation.navigate("Login")}} style = {styles.submitButton}>
               <Text style = {styles.submitText}>登録する</Text>
             </TouchableHighlight>
          </View>

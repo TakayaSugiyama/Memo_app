@@ -9,11 +9,11 @@ import MemoEditScreen from "./src/screens/MemoEditScreen";
 
 
 const App = createStackNavigator({
+  Login: {screen: LoginScreen},
+  SignUp: {screen: SignUpScreen},
   Home: {screen: MemoListScreen},
   MemoDetail: {screen: MemoDetailScreen},
   MemoEdit: {screen: MemoEditScreen},
-  Login: {screen: LoginScreen},
-  SignUp: {screen: SignUpScreen},
 },{
   defaultNavigationOptions: {headerTitle: "Memot",
                             headerStyle:{
@@ -21,7 +21,9 @@ const App = createStackNavigator({
                             },
                             headerTitleStyle:{
                               color:"#fff",
-                            }
+                            }, 
+                            headerTintColor: "#fff",
+                            headerBackTitle: null,
  },
 });
 

@@ -7,11 +7,16 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 class MemoEditScreen extends React.Component{
   render(){
     return(
-      <View style = {styles.container}>
-         <TextInput style = {styles.editInputArea} value = "Hi"  multiline /> 
-         <CircleButton>
-           <FontAwesomeIcon icon = {faCheck} style = {styles.checkButton}/>
-         </CircleButton>
+      <View>
+        <View style = {styles.container}>
+          <TextInput style = {styles.editInputArea} value = "Hi"  multiline /> 
+        </View>
+
+        <View style = {styles.updateField}>
+          <CircleButton onPress = {() => {this.props.navigation.navigate("MemoDetail")}}>
+            <FontAwesomeIcon icon = {faCheck} style = {styles.checkButton}/>
+          </CircleButton>
+        </View>
       </View>
     )
   }
@@ -34,6 +39,10 @@ const styles = StyleSheet.create({
      paddingBottom:780,
      color:"#333",
      fontSize:24,
+   },
+   updateField:{
+      top: 740,
+      left: 340
    }
 })
 
